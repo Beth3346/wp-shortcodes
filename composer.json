@@ -1,0 +1,51 @@
+{
+    "name": "elr/wpshortcodes",
+    "license": "MIT",
+    "description": "WordPress shortcodes",
+    "homepage": "http://www.elizabeth-rogers.com",
+    "authors": [
+    {
+        "name": "Elizabeth Rogers",
+        "email": "beth@elizabeth-rogers.com",
+        "homepage": "https://github.com/Beth3346"
+    }
+    ],
+    "keywords": [
+        "wordpress",
+        "shortcodes"
+    ],
+    "support": {
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "composer/installers": "~1.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.8"
+    },
+  "autoload": {
+    "psr-4": {
+      "WpShortcodes\\": "src/"
+    }
+  },
+    "scripts": {
+        "test": [
+            "phpcs"
+        ],
+        "fix": [
+            "phpcbf"
+        ]
+    },
+    "archive" : {
+        "exclude": [
+            ".editorconfig",
+            ".gitattributes",
+            ".gitignore",
+            ".travis.yml",
+            "CONTRIBUTING.md",
+            "phpcs.xml",
+            "phpunit.xml",
+            "tests"
+        ]
+    }
+}
